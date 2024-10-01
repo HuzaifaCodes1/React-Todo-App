@@ -49,9 +49,7 @@ li.completed {
   display: none;
 }
 
-.checkbox-wrapper *,
-.checkbox-wrapper ::after,
-.checkbox-wrapper ::before {
+.checkbox-wrapper * {
   box-sizing: border-box;
   user-select: none;
 }
@@ -77,6 +75,16 @@ li.completed {
   vertical-align: middle;
 }
 
+.checkbox-wrapper .checkbox-rect {
+  fill: none; /* Default state */
+  stroke: black; /* Outline color */
+  transition: fill 0.3s; /* Smooth transition for filling */
+}
+
+.checkbox-wrapper .check:checked + .label svg .checkbox-rect {
+  fill: black; /* Fill color when checked */
+}
+
 .checkbox-wrapper .path1 {
   stroke-dasharray: 400;
   stroke-dashoffset: 400;
@@ -88,5 +96,7 @@ li.completed {
   stroke-dashoffset: 0;
   opacity: 1;
 }
+
+
 
 
