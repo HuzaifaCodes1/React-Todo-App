@@ -28,5 +28,17 @@ li {
   justify-content: space-between;
   align-items: center;
   margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc; /* Optional: add a border for clarity */
+  border-radius: 5px; /* Optional: add rounded corners */
+}
+
+li button {
+  margin-left: 10px; /* Space out buttons */
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray; /* Optional: change color for completed tasks */
 }
 
