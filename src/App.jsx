@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import './Checkbox.css'; // Make sure to import your Checkbox styles if needed
+import './App.css'; // Make sure to import your Checkbox styles if needed
 
 function App() {
   const [todos, setTodos] = useState([]);
