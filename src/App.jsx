@@ -33,30 +33,31 @@ function App() {
     <div className="App">
       <h1>To-Do App</h1>
       <form onSubmit={addTodo}>
-        <input
-          type="text"
-          value={input}
-          onChange={handleInputChange}
-          placeholder="Add a new task"
-        />
+        <div className="inputbox">
+          <input
+            required="required"
+            type="text"
+            value={input}
+            onChange={handleInputChange}
+          />
+          <span>Username</span>
+          <i></i>
+        </div>
         <button type="submit">Add</button>
       </form>
       <ul>
-  {todos.map((todo, index) => (
-    <li key={index} className={todo.completed ? 'completed' : ''}>
-      {todo.text}
-      <div>
-        <button onClick={() => toggleTodo(index)}>Toggle</button>
-        <button onClick={() => deleteTodo(index)}>Delete</button>
-      </div>
-    </li>
-  ))}
-</ul>
-
+        {todos.map((todo, index) => (
+          <li key={index} className={todo.completed ? 'completed' : ''}>
+            {todo.text}
+            <div>
+              <button onClick={() => toggleTodo(index)}>Toggle</button>
+              <button onClick={() => deleteTodo(index)}>Delete</button>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
 
 export default App;
-
-
