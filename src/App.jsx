@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <h1>To-Do App</h1>
-      <form onSubmit={addTodo}>
+      <form onSubmit={addTodo} className="todo-form">
         <div className="inputbox">
           <input
             required="required"
@@ -61,3 +61,4 @@ function App() {
 }
 
 export default App;
+

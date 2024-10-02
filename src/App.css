@@ -5,11 +5,15 @@
 
 form {
   margin-bottom: 20px;       
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center items */
+  align-items: center; /* Align vertically */
 }
 
 .inputbox {
   position: relative;
   width: 196px;
+  margin-right: 10px; /* Add space between input and button */
 }
 
 .inputbox input {
@@ -40,9 +44,9 @@ form {
 
 .inputbox input:valid ~ span,
 .inputbox input:focus ~ span {
-  color: #45f3ff;
+  color: #c0c0c0; /* Silver color */
   transform: translateX(-10px) translateY(-34px);
-  font-size: 0.75em; /* Fixed the comma to a dot */
+  font-size: 0.75em;
 }
 
 .inputbox i {
@@ -51,7 +55,7 @@ form {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #45f3ff;
+  background: #c0c0c0; /* Silver color */
   border-radius: 4px;
   transition: 0.5s;
   pointer-events: none;
@@ -66,7 +70,6 @@ form {
 button {
   padding: 10px;
   font-size: 16px;
-  margin-left: 5px;
 }
 
 ul {
@@ -92,3 +95,4 @@ li.completed {
   text-decoration: line-through;
   color: gray; /* Optional: change color for completed tasks */
 }
+
