@@ -1,4 +1,3 @@
-/* General App Styles */
 .App {
   text-align: center;
   margin: 20px;
@@ -41,52 +40,6 @@ li button {
 li.completed {
   text-decoration: line-through;
   color: gray; /* Optional: change color for completed tasks */
-}
-
-/* Custom Checkbox Styles */
-.checkbox-wrapper input[type="checkbox"] {
-  visibility: hidden;
-  display: none;
-}
-
-.checkbox-wrapper *,
-.checkbox-wrapper ::after,
-.checkbox-wrapper ::before {
-  box-sizing: border-box;
-  user-select: none;
-}
-
-.checkbox-wrapper {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.checkbox-wrapper .label {
-  cursor: pointer;
-}
-
-.checkbox-wrapper .check {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  opacity: 0;
-}
-
-.checkbox-wrapper .label svg {
-  vertical-align: middle;
-}
-
-.checkbox-wrapper .path1 {
-  stroke-dasharray: 400;
-  stroke-dashoffset: 400;
-  transition: .5s stroke-dashoffset;
-  opacity: 0;
-}
-
-.checkbox-wrapper .check:checked + .label svg .path1 {
-  stroke-dashoffset: 0;
-  opacity: 1;
 }
 
 
