@@ -40,7 +40,7 @@ function App() {
             value={input}
             onChange={handleInputChange}
           />
-          <span>Username</span>
+          <span>Type List</span>
           <i></i>
         </div>
         <button type="submit">Add</button>
